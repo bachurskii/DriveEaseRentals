@@ -29,7 +29,7 @@ function Home() {
               </li>
 
               <li className={styles.list}>
-                <Link to="/Rewies">Rewies</Link>
+                <Link to="/reviews">Reviews</Link>
               </li>
             </ul>
           </nav>
