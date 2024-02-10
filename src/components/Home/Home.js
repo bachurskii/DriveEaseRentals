@@ -1,39 +1,15 @@
 import styles from "./Home.module.css";
-
-import { Link } from "react-router-dom";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import ourMissions from "../../img/our-missions.png";
 import OurCars from "../../img/ourCars.png";
 import ourServices from "../../img/ourServices.png";
 import ourCommiments from "../../img/ourCommiments.png";
 function Home() {
-  const randomPhone =
-    "+380" + Math.floor(Math.random() * 900000000 + 100000000);
-  const randomEmail = `contact${Math.floor(Math.random() * 1000)}@driveease.ua`;
-  const locations = ["Kyiv", "Kharkov", "Odessa", "Lviv", "Dnepr"];
-  const randomLocation =
-    locations[Math.floor(Math.random() * locations.length)];
   return (
     <>
       <div className={styles.HomePageImage}>
-        <div className={styles.container}>
-          <nav className={styles.nav}>
-            <Link to="/">
-              <img src="/img/logo.png" alt="Logo" className={styles.logo} />
-            </Link>
-            <ul className={styles.lists}>
-              <li className={styles.list}>
-                <Link to="/">Home</Link>
-              </li>
-              <li className={styles.list}>
-                <Link to="/Cars">Cars</Link>
-              </li>
-
-              <li className={styles.list}>
-                <Link to="/reviews">Reviews</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <Header />
         <h1 className={styles.title}>
           Comfort, style, freedom - rent the best
         </h1>
@@ -89,28 +65,7 @@ function Home() {
           </p>
         </div>
       </section>
-      <footer className={styles.footer}>
-        <div className={styles.footerContent}>
-          <img src="/img/logo.png" alt="Logo" className={styles.footerLogo} />
-          <div className={styles.footerLinks}>
-            <a href="/terms">Terms of Service</a>
-            <a href="/privacy">Privacy Policy</a>
-          </div>
-          <div className={styles.socialLinks}>
-            <a href="https://facebook.com">Facebook</a>
-            <a href="https://twitter.com/Bachurskii_n1">Twitter</a>
-            <a href="https://instagram.com/bachurskii_n1">Instagram</a>
-            <a href="https://linkedin.com">Linkedin</a>
-            <a href="https://github.com/bachurskii">Git Hub</a>
-          </div>
-          <div className={styles.footerBottom}>
-            <p>Phone: {randomPhone}</p>
-            <p>Email: {randomEmail}</p>
-            <p>Location: {randomLocation}, Ukraine</p>
-            <p>© 2023 DriveEase. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
