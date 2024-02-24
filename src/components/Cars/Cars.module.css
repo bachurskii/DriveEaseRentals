@@ -1,14 +1,16 @@
 .searchContainer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin: 20px;
-  margin-bottom: 50px;
+
+  align-items: center;
 }
 
 .searchForm {
   display: flex;
   align-items: center;
-
+  margin-bottom: 50px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -73,3 +75,48 @@
 }
 
 /* Cards */
+.containerInfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 29px;
+  list-style: none;
+}
+.list {
+  height: 426px;
+  width: 274px;
+  margin-bottom: 50px;
+}
+
+.leftSpan {
+  /* margin-right: 107px; */
+}
+.btnImg {
+  background-color: #3470ff;
+  margin-top: 28px;
+  max-width: 100%;
+  height: 44px;
+  padding: 12px 99px;
+  border-radius: 12px;
+  color: #ffff;
+}
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.textDesc {
+  color: #8a8a89;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0;
+}
+.mainSubcontainer {
+  background: #f7f7fb;
+}
+.addMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

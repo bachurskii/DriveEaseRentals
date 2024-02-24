@@ -1,7 +1,37 @@
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import styles from "./Cars.module.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
 function Cars() {
+  const [limit, setLimit] = useState(12);
+  const [cars, setCars] = useState([]);
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(
+        `https://65a5641152f07a8b4a3f006e.mockapi.io/api/advert?page=1&limit=${limit}`
+      );
+
+      setCars(response.data);
+    } catch (error) {
+      console.log("Bad request", error);
+    }
+  };
+  useEffect(() => {
+    console.log(cars);
+  }, [cars]);
+  useEffect(() => {
+    fetchData();
+  }, []);
+  useEffect(() => {
+    console.log(cars);
+  }, [cars]);
+  const loadMore = () => {
+    setLimit((currentLimit) => currentLimit + 12);
+  };
+  useEffect(() => {
+    fetchData();
+  }, [limit]);
   return (
     <div>
       <Header />
@@ -45,6 +75,40 @@ function Cars() {
             Search
           </button>
         </form>
+        <div>
+          <ul className={styles.containerInfo}>
+            {cars.map((car) => (
+              <li className={styles.list}>
+                <img
+                  className={styles.titleImg}
+                  src={car.img}
+                  alt={car.description}
+                  width={274}
+                  height={268}
+                />
+                <div className={styles.mainSubcontainer}>
+                  <div className={styles.subContainer}>
+                    <span className={styles.leftSpan}>
+                      {car.make} , {car.year}
+                    </span>
+                    <span>{car.rentalPrice}</span>
+                  </div>
+                  <div>
+                    <p className={styles.textDesc}>
+                      {car.address.split(", ").slice(1).join(", ")} |{" "}
+                      {car.rentalCompany} | {car.type} | {car.model} | {car.id}
+                      {/* {car.accessories} */}
+                    </p>
+                  </div>
+                  <button className={styles.btnImg}>Learn more</button>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <div className={styles.addMore}>
+            <button onClick={loadMore}>Add more</button>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
