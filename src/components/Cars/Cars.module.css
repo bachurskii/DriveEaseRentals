@@ -86,7 +86,9 @@
   width: 274px;
   margin-bottom: 50px;
 }
-
+.titleImg {
+  border-radius: 14px;
+}
 .leftSpan {
   /* margin-right: 107px; */
 }
@@ -95,9 +97,12 @@
   margin-top: 28px;
   max-width: 100%;
   height: 44px;
-  padding: 12px 99px;
+  padding: 12px 95px;
   border-radius: 12px;
   color: #ffff;
+  font-weight: 600;
+  font-size: 14px;
+  border-color: #fff;
 }
 .subContainer {
   display: flex;
@@ -119,4 +124,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btnAddMore {
+  color: #3470ff;
+  font-weight: 500;
+  border: none;
+  background: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+.btnAddMore:hover {
+  text-decoration: underline;
 }

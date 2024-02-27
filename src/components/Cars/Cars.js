@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 function Cars() {
   const [limit, setLimit] = useState(12);
+  const [more, setMore] = useState(true);
   const [cars, setCars] = useState([]);
   const fetchData = async () => {
     try {
@@ -13,6 +14,9 @@ function Cars() {
       );
 
       setCars(response.data);
+      if (response.data.length < limit) {
+        setMore(false);
+      }
     } catch (error) {
       console.log("Bad request", error);
     }
@@ -106,7 +110,11 @@ function Cars() {
             ))}
           </ul>
           <div className={styles.addMore}>
-            <button onClick={loadMore}>Add more</button>
+            {more && (
+              <button className={styles.btnAddMore} onClick={loadMore}>
+                Load more
+              </button>
+            )}
           </div>
         </div>
       </div>
