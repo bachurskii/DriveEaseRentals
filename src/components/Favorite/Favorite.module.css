@@ -1,0 +1,7 @@
+.noFavoritest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: fantasy;
+  font-size: 2rem;
+}

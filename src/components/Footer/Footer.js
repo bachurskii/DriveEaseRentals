@@ -18,7 +18,9 @@ function Footer() {
           <a href="https://facebook.com">Facebook</a>
           <a href="https://twitter.com/Bachurskii_n1">Twitter</a>
           <a href="https://instagram.com/bachurskii_n1">Instagram</a>
-          <a href="https://linkedin.com">Linkedin</a>
+          <a href="https://linkedin.com/in/george-bachurskii-0915ab282">
+            Linkedin
+          </a>
           <a href="https://github.com/bachurskii">Git Hub</a>
         </div>
         <div className={styles.footerBottom}>

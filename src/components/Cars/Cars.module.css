@@ -75,6 +75,11 @@
 }
 
 /* Cards */
+.icon {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+}
 .containerInfo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -85,13 +90,12 @@
   height: 426px;
   width: 274px;
   margin-bottom: 50px;
+  position: relative;
 }
 .titleImg {
   border-radius: 14px;
 }
-.leftSpan {
-  /* margin-right: 107px; */
-}
+
 .btnImg {
   background-color: #3470ff;
   margin-top: 28px;
@@ -119,6 +123,7 @@
 }
 .mainSubcontainer {
   background: #f7f7fb;
+  height: 137.6px;
 }
 .addMore {
   display: flex;
@@ -136,3 +141,4 @@
 .btnAddMore:hover {
   text-decoration: underline;
 }
+/* details */

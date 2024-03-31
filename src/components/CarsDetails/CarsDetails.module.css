@@ -1,0 +1,93 @@
+body p div {
+  margin: 0;
+  padding: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-color: rgba(18, 20, 23, 0.8); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* High z-index to cover everything else */
+}
+.modalBackground {
+  width: 541px;
+  height: 736px;
+  position: fixed;
+  top: 0px;
+  left: 510px;
+  right: 0;
+  bottom: 20px;
+  background-color: #ffffff;
+  z-index: 1001;
+}
+.closeIcon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px 16px;
+}
+.imgDetails {
+  /* margin-bottom: 14px; */
+}
+.imgDetails img {
+  border-radius: 14px;
+}
+.firstDescr {
+}
+.container {
+  padding: 0 40px;
+}
+.textDesc {
+  margin-top: 8px;
+  color: #8a8a89;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0;
+}
+.containerDesc {
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+.text {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-family: Manrope;
+  font-size: 14px;
+  line-height: 20px;
+  color: #121417;
+}
+.rentalConditions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.elemConditions {
+  background-color: #f9f9f9;
+  padding: 7px 14px;
+  border-radius: 35px;
+}
+.textAccesories {
+  margin-bottom: 8px;
+}
+.rentalCond {
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+.btnRental {
+  background-color: #3470ff;
+  color: #ffffff;
+  padding: 12px 50px;
+  border-radius: 12px;
+  border-color: #ffffff;
+  margin-top: 8px;
+}
+.titleImg {
+  width: 100%;
+}
