@@ -1,6 +1,6 @@
 # Drive Easy Rentals
 
-![Main omage](/public/img/main.jpg)
+![Main omage](/public/img/drive-img.png)
 Welcome to Rental Easy-Drive, the convenient web application that lets you explore, favorite, and filter through a wide selection of vehicles to find your perfect rental car.
 
 ## Features
