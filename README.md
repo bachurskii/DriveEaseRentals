@@ -23,9 +23,3 @@ To get started with Drive-Easy-Rentals:
 3. Click on a car to view more details.
 4. If you like a car, click the 'Add to Favorites' button.
 5. Access your favorites at any time by clicking on the 'Favorites' link in the navigation bar.
-
-## Feedback
-
-Your feedback is important to us. If you have any suggestions or encounter any issues, please feel free to [open an issue](#) or [contact us](#).
-
-Thank you for choosing Drive-Easy-Rentals for your car rental needs!
