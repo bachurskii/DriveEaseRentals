@@ -2,7 +2,7 @@
   "files": {
     "main.css": "/static/css/main.dcf1043a.css",
     "main.js": "/static/js/main.f4bb518e.js",
-    "static/media/ourCommiments.png": "/static/media/ourCommiments.76f09f7e2e9a850caf75.png",
+    "static/media/ourCommiments.png": "/img/ourCommiments.76f09f7e2e9a850caf75.png",
     "static/media/ourCars.png": "/static/media/ourCars.8fd576819e7bfce361bc.png",
     "static/media/ourServices.png": "/static/media/ourServices.ac2d399ea56bc9c15df1.png",
     "static/media/our-missions.png": "/static/media/our-missions.0c35aa10fb6d4e2a26ff.png",
@@ -12,8 +12,5 @@
     "main.dcf1043a.css.map": "/static/css/main.dcf1043a.css.map",
     "main.f4bb518e.js.map": "/static/js/main.f4bb518e.js.map"
   },
-  "entrypoints": [
-    "static/css/main.dcf1043a.css",
-    "static/js/main.f4bb518e.js"
-  ]
+  "entrypoints": ["static/css/main.dcf1043a.css", "static/js/main.f4bb518e.js"]
 }
