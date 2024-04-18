@@ -12,6 +12,7 @@ import {
   removeFavorite,
 } from "../../redux/actions/favoritesActions";
 import CarsDetails from "../CarsDetails/CarsDetails";
+
 function Favorite() {
   const dispatch = useDispatch();
   const favorites = useSelector((state) => state.favorites.favoritesCars);
@@ -38,7 +39,7 @@ function Favorite() {
   const saveFavoritesLocal = (favorites) => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   };
-  
+
   const loadFavoritesLocal = () => {
     const storedFavorites = localStorage.getItem("favorites");
     return storedFavorites ? JSON.parse(storedFavorites) : [];
