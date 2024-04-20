@@ -2,7 +2,7 @@
   "files": {
     "main.css": "/drive-easy-rentals/static/css/main.d38a6b5c.css",
     "main.js": "/drive-easy-rentals/static/js/main.d5969c0d.js",
-    "static/media/ourCommiments.png": "/drive-easy-rentals/static/media/ourCommiments.76f09f7e2e9a850caf75.png",
+    "static/media/ourCommiments.png": "./static/media/ourCommiments.76f09f7e2e9a850caf75.png",
     "static/media/ourCars.png": "/drive-easy-rentals/static/media/ourCars.8fd576819e7bfce361bc.png",
     "static/media/ourServices.png": "/drive-easy-rentals/static/media/ourServices.ac2d399ea56bc9c15df1.png",
     "static/media/our-missions.png": "/drive-easy-rentals/static/media/our-missions.0c35aa10fb6d4e2a26ff.png",
@@ -12,8 +12,5 @@
     "main.d38a6b5c.css.map": "/drive-easy-rentals/static/css/main.d38a6b5c.css.map",
     "main.d5969c0d.js.map": "/drive-easy-rentals/static/js/main.d5969c0d.js.map"
   },
-  "entrypoints": [
-    "static/css/main.d38a6b5c.css",
-    "static/js/main.d5969c0d.js"
-  ]
+  "entrypoints": ["static/css/main.d38a6b5c.css", "static/js/main.d5969c0d.js"]
 }
