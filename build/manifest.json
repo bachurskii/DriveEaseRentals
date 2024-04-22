@@ -3,7 +3,7 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "./img/logo.png",
+      "src": "/drive-easy-rentals/img/logo.png",
       "type": "image/png",
       "sizes": "192x192"
     }
