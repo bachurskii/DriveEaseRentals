@@ -12,5 +12,8 @@
     "main.d38a6b5c.css.map": "/drive-easy-rentals/static/css/main.d38a6b5c.css.map",
     "main.d5969c0d.js.map": "/drive-easy-rentals/static/js/main.d5969c0d.js.map"
   },
-  "entrypoints": ["static/css/main.d38a6b5c.css", "static/js/main.d5969c0d.js"]
+  "entrypoints": [
+    "static/css/main.d38a6b5c.css",
+    "static/js/main.d5969c0d.js"
+  ]
 }
